@@ -1,8 +1,9 @@
+/* @import url(font.css); */
 /* 1000 */
 @media (max-width: 1000px) {
   /* list */
   .card-list ul {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
   }
 }
 /* 768 */
@@ -10,8 +11,21 @@
   header {
     height: 65px;
   }
+  .nav {
+    position: relative;
+  }
   .menu {
     display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    gap: 20px;
+    padding: 20px 0;
+    flex-direction: column;
+    background-color: aqua;
+  }
+  .menu.show {
+    display: flex;
   }
   .hamburger {
     display: block;
@@ -33,7 +47,7 @@
   }
   /* list */
   .card-list ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
   }
 }
 /* 480 */
@@ -42,12 +56,12 @@
     display: block;
   }
   .card-list ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
   }
   .country p {
     font-size: 14px;
   }
-  .card-list h3{
+  .card-list h3 {
     font-size: 16px;
   }
   .price {
@@ -60,6 +74,7 @@
     height: 55px;
   }
   header h1 {
+    font-family: "BookkMyungjo";
     font-size: 22px;
   }
   .intro-text h2 {
@@ -80,7 +95,7 @@
     display: none;
   }
   /* list */
-   .card-list ul {
-    grid-template-columns:1fr;
+  .card-list ul {
+    /* grid-template-columns:1fr; */
   }
 }
