@@ -20,6 +20,7 @@ body {
   width: 90%;
   max-width: 1280px;
   margin: auto;
+  background-color: aqua;
 }
 /* 전체 레이아웃 */
 .wrap {
